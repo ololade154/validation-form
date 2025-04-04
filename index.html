@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation form</title>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <img src="/images/paper-plane-tilt.svg" alt="" class="image" />
+
+        <div class="input-group">
+          <label>Full Name</label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            id="contact-name"
+            onkeyup="validateName()"
+          />
+          <span class="name-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Phone No</label>
+          <input
+            type="tel"
+            placeholder="123 456 7890"
+            id="phone-name"
+            onkeyup="validatePhone()"
+          />
+          <span class="phone-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Email Id</label>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            id="email-name"
+            onkeyup="validateEmail()"
+          />
+          <span class="email-error"></span>
+        </div>
+
+        <div class="input-group">
+          <label>Your Message</label>
+          <textarea
+            rows="5"
+            placeholder="Enter your message"
+            id="message-name"
+            onkeyup="validateMessage()"
+          ></textarea>
+          <span class="message-error"></span>
+        </div>
+
+        <button onclick="return validateForm()">Submit</button>
+        <span class="submit-error"></span>
+      </form>
+    </div>
+    <script src="/script/script.js"></script>
+  </body>
+</html>
