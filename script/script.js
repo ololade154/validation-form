@@ -25,10 +25,10 @@ function validatePhone() {
     phoneError.innerHTML = "phone no is required";
     return false;
   }
-  if (phone.length != 10) {
-    phoneError.innerHTML = "phone no should be 10 digits";
-    return false;
-  }
+  // if (phone.length != 10) {
+  //   phoneError.innerHTML = "phone no should be 10 digits";
+  //   return false;
+  // }
   if (!phone.match(/^[0-9]{10}$/)) {
     phoneError.innerHTML = "Only digit please";
     return false;
