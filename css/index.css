@@ -85,9 +85,6 @@
     color: red;
     font-size: 14px;
   }
-  .input-group span i {
-    color: seagreen;
-  }
   .image2 {
     height: 20px;
   }
@@ -166,9 +163,6 @@
   .submit-error {
     color: red;
     font-size: 12px;
-  }
-  .input-group span i {
-    color: seagreen;
   }
   .image2 {
     height: 15px;
